@@ -199,7 +199,7 @@ const Home = () => {
       return "";
     }
 
-    return "Claiming not available";
+    return "";
   }, [
     isSoldOut,
     canClaim,
@@ -261,7 +261,7 @@ const Home = () => {
         <p className={styles.explain}>
         <p>AWESOME, YOU FOUND THIS PAGE.</p>
           <p>BUT THIS IS A TESTPAGE. DO   NOT BUY!</p>
-          <p>{activeClaimCondition.data?.availableSupply} / 115000000.0 FOIC</p>
+          <p>{activeClaimCondition.data?.availableSupply - 100000000} / 115000000.0 FOIC</p>
 
         </p>
 
