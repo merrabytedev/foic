@@ -42,6 +42,8 @@ const Home = () => {
 
   const claimedSupply = useTokenSupply(contract);
 
+  const remainingSupply = activeClaimCondition.data?.availableSupply - 100000000;
+
   const totalAvailableSupply = useMemo(() => {
     try {
       return BigNumber.from(activeClaimCondition.data?.availableSupply || 0);
@@ -261,7 +263,7 @@ const Home = () => {
         <p className={styles.explain}>
         <p>AWESOME, YOU FOUND THIS PAGE.</p>
           <p>BUT THIS IS A TESTPAGE. DO   NOT BUY!</p>
-          <p>{activeClaimCondition.data?.availableSupply - 100000000} / 115000000.0 FOIC</p>
+          <p>{remainingSupply} / 115000000.0 FOIC</p>
 
         </p>
 
