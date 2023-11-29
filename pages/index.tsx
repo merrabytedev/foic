@@ -41,7 +41,7 @@ const Home = () => {
 
   const claimedSupply = useTokenSupply(contract);
 
-  const remainingSupply = Number(activeClaimCondition.data?.availableSupply) - 385000000;
+  const remainingSupply = (Number(activeClaimCondition.data?.availableSupply) - 385000000).toLocaleString('en-US');
 
   const totalAvailableSupply = useMemo(() => {
     try {
@@ -262,7 +262,7 @@ const Home = () => {
         <p className={styles.explain}>
         <p>AWESOME, YOU FOUND THIS PAGE.</p>
           <p>BUT THIS IS A TESTPAGE. DO   NOT BUY!</p>
-          <p>{remainingSupply} / 115000000.0 FOIC</p>
+          <p>{remainingSupply} / 115,000,000 FOIC</p>
 
         </p>
 
