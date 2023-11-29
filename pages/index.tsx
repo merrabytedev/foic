@@ -42,7 +42,7 @@ const Home = () => {
 
   const claimedSupply = useTokenSupply(contract);
 
-  const remainingSupply = activeClaimCondition.data?.availableSupply - 100000000;
+  const remainingSupply = Number(activeClaimCondition.data?.availableSupply) - 100000000;
 
   const totalAvailableSupply = useMemo(() => {
     try {
