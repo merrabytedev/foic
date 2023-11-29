@@ -19,7 +19,7 @@ import { parseIneligibility } from "../utils/parseIneligibility";
 
 const Home = () => {
   //const tokenAddress = "0xacEFf07f6e1FC0e7a14428599E1F00A73A9e8a50";
-  const tokenAddress = "0xacEFf07f6e1FC0e7a14428599E1F00A73A9e8a50";
+  const tokenAddress = "0x8D9542CCa5F53D66c5f12BE3B2001242635685f3";
   const { contract } = useContract(tokenAddress, "token-drop");
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
@@ -180,7 +180,7 @@ const Home = () => {
   );
   const buttonText = useMemo(() => {
     if (isSoldOut) {
-      return "Sold out";
+      return "";
     }
 
     if (canClaim) {
@@ -196,7 +196,7 @@ const Home = () => {
       return parseIneligibility(claimIneligibilityReasons.data, quantity);
     }
     if (buttonLoading) {
-      return "Fetching FOIC";
+      return "";
     }
 
     return "Claiming not available";
