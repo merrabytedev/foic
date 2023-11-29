@@ -217,11 +217,11 @@ const Home = () => {
   <div className={styles.connect}>
 
   <ConnectWallet
-  accentColor="#64CCCD"
-  colorMode="dark"
-  className="web3btn"
-  >
-  </ConnectWallet>
+              dropdownPosition={{
+                side: "bottom",
+                align: "center",
+              }}
+            />
   </div>
   <div className={styles.balance}>
   <p>YOUR FOIC BALANCE:</p>
