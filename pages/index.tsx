@@ -283,11 +283,8 @@ const Home = () => {
               className={`${styles.textInput} ${styles.noGapBottom}`}
             />
             <Web3Button
-              accentColor="#64CCCD"
-              colorMode="dark"
               contractAddress={tokenAddress}
               action={(contract) => contract.erc20.claim(quantity)}
-              className="web3btn"
             >
             <p>BUY</p>
             </Web3Button>
