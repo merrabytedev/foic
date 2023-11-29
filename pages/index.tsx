@@ -30,8 +30,8 @@ const Home: NextPage = () => {
           <div className={styles.connect}>
             <ConnectWallet
               dropdownPosition={{
-                side: "top",
-                align: "right",
+                side: "bottom",
+                align: "center",
               }}
             />
           </div>
