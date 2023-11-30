@@ -18,7 +18,7 @@ import styles from "../styles/Home.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 const Home = () => {
-  const tokenAddress = "0xacEFf07f6e1FC0e7a14428599E1F00A73A9e8a50";
+  const tokenAddress = "0xe5D25E3d686a189e020f61B0DcCD184eB5D4cdB4";
   const { contract } = useContract(tokenAddress, "token-drop");
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
@@ -41,7 +41,9 @@ const Home = () => {
 
   const claimedSupply = useTokenSupply(contract);
 
-  const remainingSupply = (Number(activeClaimCondition.data?.availableSupply) - 385000000).toLocaleString('en-US');
+  const remainingSupply = (Number(activeClaimCondition.data?.availableSupply)).toLocaleString('en-US');
+
+  // const remainingSupply = (Number(activeClaimCondition.data?.availableSupply) - 385000000).toLocaleString('en-US');
 
   const totalAvailableSupply = useMemo(() => {
     try {
