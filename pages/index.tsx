@@ -238,7 +238,6 @@ const Home = () => {
      sizes="(max-width: 500px) 100vw,
          (max-width: 700px) 50vw,
          33vw"
-
    />
 
       {(claimConditions.data &&
@@ -262,10 +261,8 @@ const Home = () => {
         <>
 
         <p className={styles.explain}>
-        <p>AWESOME, YOU FOUND THIS PAGE.</p>
-          <p>BUT THIS IS A TESTPAGE. DO   NOT BUY!</p>
-          <p>{remainingSupply} / 115,000,000 FOIC</p>
-
+        <p>REMAINING PRESALE SUPPLY</p>
+        <p>{remainingSupply} / 115,000,000 FOIC</p>
         </p>
 
           <div className={styles.claimGrid}>
