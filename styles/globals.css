@@ -7,24 +7,6 @@
 *::after {
   box-sizing: border-box;
 }
-/*
-@font-face {
-	font-family: 'retropix';
-	src:url('../public/fonts/retropix.otf');
-	src:url('../public/fonts/retropix.otf') format('embedded-opentype'),
-		url('../public/fonts/retropix.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'mainport';
-	src:url('../public/fonts/Mainport.otf');
-	src:url('../public/fonts/Mainport.otf') format('embedded-opentype'),
-		url('../public/fonts/Mainport.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}*/
 
 /* Set core body defaults */
 body -webkit-scrollbar {
@@ -32,7 +14,7 @@ body -webkit-scrollbar {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   padding-bottom: 250px;
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   letter-spacing: .1rem;
   display: none;
 }
@@ -57,7 +39,7 @@ html,
 body {
   background: var(--black);
   color: var(--white);
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   letter-spacing: .1rem;
   display: flex;
   margin: 0;

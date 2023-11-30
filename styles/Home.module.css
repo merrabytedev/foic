@@ -22,7 +22,7 @@
   min-width: 3rem;
   font-size: 1rem;
   background: #64CCCD;
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   letter-spacing: .1rem;
   background-image: linear-gradient(to left, #cc25b3 0%, #418dff 101.52%);
   color: #fff;
@@ -41,7 +41,7 @@
 }
 
 .web3btn {
-  font-family: "Lato", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   letter-spacing: .1rem !important;
 }
 
