@@ -262,7 +262,7 @@ const Home = () => {
 
         <p className={styles.explain}>
         <p>REMAINING PRESALE SUPPLY</p>
-        <p>{remainingSupply} / 115,000,000 FOIC</p>
+        <p>{remainingSupply} / 115,000,000</p>
         </p>
 
           <div className={styles.claimGrid}>
